@@ -2,6 +2,17 @@
   <v-app>
     <v-row>
       <v-col>
+        <h1 style="font-size: 100px; text-align: center; font-family: 'M PLUS Rounded 1c', sans-serif;">FungiRuta</h1>
+        <v-img
+          class="my-3"
+          contain
+          height="500"
+          :src="require('../assets/logoFungi.jpg')"
+        />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
         <v-card
             class="mx-auto my-12"
             max-width="374"
