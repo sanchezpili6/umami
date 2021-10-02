@@ -38,19 +38,21 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <!--HelloWorld/-->
+      <Achievements></Achievements>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+//import HelloWorld from './components/HelloWorld';
+import Achievements from './components/Achievements';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Achievements,
   },
 
   data: () => ({
