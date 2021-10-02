@@ -10,7 +10,9 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-browser-geolocation": "^1.8.0",
     "vue-router": "^3.5.2",
+    "vue2-google-maps": "^0.10.7",
     "vuetify": "^2.4.0"
   },
   "devDependencies": {

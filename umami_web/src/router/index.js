@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Achievements from "../components/Achievements";
 import Mushrooms from "../components/Mushrooms/Mushrooms";
+import MapScreen from "../components/MapScreen";
 import Profile from "../components/Profile";
 
 Vue.use(VueRouter)
@@ -16,6 +17,11 @@ const routes = [
     path: '/mymushrooms',
     name: 'MyMushrooms',
     component: Mushrooms
+  },
+  {
+    path: '/map',
+    name: 'map',
+    component: MapScreen
   },
   {
     path: '/profile',

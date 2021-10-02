@@ -1,36 +1,52 @@
 <template>
   <v-app>
-    <v-row
-      v-for="hongo in hongos"
-      :key="hongo.nombre"
+    <v-card
     >
-      <v-card>
-        <v-img
-            :src="hongo.image"
-            class="white--text align-end"
-            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            height="200px"
+      <v-card-title class="title">
+        <v-spacer></v-spacer>
+        <h1>
+          Mis hongos encontrados
+        </h1>
+        <v-spacer></v-spacer>
+        </v-card-title>
+      <v-row>
+        <v-col
+            v-for="hongo in hongos"
+            :key="hongo.nombre"
+            class="d-flex child-flex"
+            cols="4"
         >
-          <v-card-title v-text="hongo.nombre"></v-card-title>
-        </v-img>
+          <v-card
+              max-width="60%"
+              class="mx-5 my-5"
+          >
+            <v-img
+                :src="hongo.image"
+                aspect-ratio="1"
+                class="grey lighten-2"
+            >
+              <template v-slot:placeholder>
+                <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                >
+                  <v-progress-circular
+                      indeterminate
+                      color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+            <v-card-text>
+              <h2>{{hongo.nombre}}</h2>
+              <v-icon>mdi-eye</v-icon>
+            </v-card-text>
+          </v-card>
 
-        <v-card-actions>
-          <v-spacer></v-spacer>
-
-          <v-btn icon>
-            <v-icon>mdi-heart</v-icon>
-          </v-btn>
-
-          <v-btn icon>
-            <v-icon>mdi-bookmark</v-icon>
-          </v-btn>
-
-          <v-btn icon>
-            <v-icon>mdi-share-variant</v-icon>
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-row>
+        </v-col>
+      </v-row>
+    </v-card>
   </v-app>
 </template>
 
@@ -51,5 +67,11 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
 
 </style>
