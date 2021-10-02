@@ -4,6 +4,7 @@ import Achievements from "../components/Achievements";
 import Mushrooms from "../components/Mushrooms/Mushrooms";
 import MapScreen from "../components/MapScreen";
 import Profile from "../components/Profile";
+import HomePage from "../components/HomePage";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/home',
+    name: 'HomePage',
+    component: HomePage
   },
 
 ]
