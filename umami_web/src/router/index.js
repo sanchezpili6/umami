@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import MapScreen from "../components/MapScreen";
 import Profile from "../components/Profile";
 import HomePage from "../components/HomePage";
+import Achievements from "../components/Achievements";
 
 Vue.use(VueRouter)
 
@@ -18,9 +19,14 @@ const routes = [
     component: Profile
   },
   {
-    path: '/home',
+    path: '/',
     name: 'HomePage',
     component: HomePage
+  },
+  {
+    path: '/achievements',
+    name: 'Achievements',
+    component: Achievements
   },
 
 ]

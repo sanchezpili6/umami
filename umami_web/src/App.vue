@@ -22,10 +22,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
 <style>
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
 </style>
-=======
-<style></style>
->>>>>>> 0b2bd78a28d37b6a427f824337f9cd95a21c50c0

@@ -11,7 +11,7 @@
             size="164"
             tile
         >
-          <v-img src="https://media-exp1.licdn.com/dms/image/C5603AQGXVUNE7H7wFg/profile-displayphoto-shrink_800_800/0/1614135404698?e=1638403200&v=beta&t=3aXNAAoI997Or09JFPQkZL_-AABS2-1S-GWR4sZMtDI"></v-img>
+          <v-img src="https://avatars.githubusercontent.com/u/37568592?v=4"></v-img>
         </v-avatar>
       </v-card-title>
       <v-card-text class="mx-2">
