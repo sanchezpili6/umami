@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import About from '../views/About.vue'
 import HelloWorld from "../components/HelloWorld";
+import Profile from "../components/Profile";
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/helloworld',
     name: 'HelloWorld',
     component: HelloWorld
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
   },
 
 ]
