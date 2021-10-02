@@ -3,7 +3,6 @@
     <v-row>
       <v-col>
         <v-card
-            :loading="loading"
             class="mx-auto my-12"
             max-width="374"
         >
@@ -54,7 +53,6 @@
 
           <v-card-text>
             <v-chip-group
-                v-model="selection"
                 active-class="deep-purple accent-4 white--text"
                 column
             >
@@ -72,7 +70,6 @@
             <v-btn
                 color="deep-purple lighten-2"
                 text
-                @click="reserve"
             >
               ¡Reservar!
             </v-btn>
@@ -81,7 +78,6 @@
       </v-col>
       <v-col>
         <v-card
-            :loading="loading"
             class="mx-auto my-12"
             max-width="374"
         >
@@ -132,7 +128,6 @@
 
           <v-card-text>
             <v-chip-group
-                v-model="selection"
                 active-class="deep-purple accent-4 white--text"
                 column
             >
@@ -150,7 +145,6 @@
             <v-btn
                 color="deep-purple lighten-2"
                 text
-                @click="reserve"
             >
               ¡Reservar!
             </v-btn>
@@ -159,7 +153,6 @@
       </v-col>
       <v-col>
         <v-card
-            :loading="loading"
             class="mx-auto my-12"
             max-width="374"
         >
@@ -210,7 +203,6 @@
 
           <v-card-text>
             <v-chip-group
-                v-model="selection"
                 active-class="deep-purple accent-4 white--text"
                 column
             >
@@ -228,7 +220,6 @@
             <v-btn
                 color="deep-purple lighten-2"
                 text
-                @click="reserve"
             >
               ¡Reservar!
             </v-btn>
@@ -298,7 +289,7 @@
 
 <script>
 export default {
-  name: "HomePage"
+  name: "HomePage",
 }
 </script>
 
