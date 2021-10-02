@@ -1,21 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import About from '../views/About.vue'
-import HelloWorld from "../components/HelloWorld";
+import MapScreen from "../components/MapScreen";
 import Profile from "../components/Profile";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/about',
-    name: 'About',
-    component: About
-  },
-  {
-    path: '/helloworld',
-    name: 'HelloWorld',
-    component: HelloWorld
+    path: '/map',
+    name: 'map',
+    component: MapScreen
   },
   {
     path: '/profile',
