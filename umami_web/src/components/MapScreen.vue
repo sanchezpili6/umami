@@ -1,35 +1,40 @@
 <template>
-  <div>
-    <div>
-      <h2>Vue Js Search and Add Marker</h2>
-
-      <label>
-        <gmap-autocomplete @place_changed="initMarker"></gmap-autocomplete>
-
-        <button @click="addLocationMarker">Add</button>
-      </label>
-      <br/>
-
-    </div>
+  <v-container>
     <br>
-    <gmap-map
-        :zoom="14"
-        :center="center"
-        style="width:50%;  height: 600px;"
-    >
-      <gmap-marker
-          :key="index"
-          v-for="(m, index) in locationMarkers"
-          :position="m.position"
-          @click="center=m.position"
-      ></gmap-marker>
-    </gmap-map>
-  </div>
+    <v-row>
+      <v-col
+        cols="12"
+        align-self="center"
+      >
+        <h2 style="text-align: center">¡Descubre hongos!</h2>
+        <br>
+      </v-col>
+    </v-row>
+    <v-row class="map-container">
+      <v-col
+        cols="12"
+        align-self="center"
+      >
+        <gmap-map
+          :zoom="17"
+          :center="center"
+          style="width:100%;  height: 400px;"
+        >
+          <gmap-marker
+            :key="index"
+            v-for="(m, index) in locationMarkers"
+            :position="m.position"
+            @click="center=m.position"
+          ></gmap-marker>
+        </gmap-map>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
-  name: "AddGoogleMap",
+  name: "MapScreen",
   data() {
     return {
       center: {
@@ -73,3 +78,18 @@ export default {
   }
 };
 </script>
+
+<style>
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .map-container {
+    /*width: 100%;*/
+  }
+}
+/* Web Desktop */
+@media only screen and (min-width: 768px) {
+  .map-container {
+
+  }
+}
+</style>
