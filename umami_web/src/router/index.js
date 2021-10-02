@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MapScreen from "../components/MapScreen";
 import Profile from "../components/Profile";
+import HomePage from "../components/HomePage";
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/home',
+    name: 'HomePage',
+    component: HomePage
   },
 
 ]
