@@ -1,15 +1,13 @@
 <template>
   <v-container>
     <br>
-    <div>
-      <label>
+    <v-row>
+      <v-col cols="12">
         <gmap-autocomplete @place_changed="initMarker"></gmap-autocomplete>
-
-        <button @click="addLocationMarker">Add</button>
-      </label>
+        <v-btn @click="addLocationMarker">Add</v-btn>
+      </v-col>
       <br/>
-
-    </div>
+    </v-row>
     <v-row>
       <v-col
         cols="12"
@@ -57,6 +55,7 @@ export default {
   },
 
   mounted() {
+    console.log(this.$refs.map)
     this.locateGeoLocation();
   },
 
