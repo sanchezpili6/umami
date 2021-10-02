@@ -1,6 +1,15 @@
 <template>
   <v-container>
     <br>
+    <div>
+      <label>
+        <gmap-autocomplete @place_changed="initMarker"></gmap-autocomplete>
+
+        <button @click="addLocationMarker">Add</button>
+      </label>
+      <br/>
+
+    </div>
     <v-row>
       <v-col
         cols="12"
