@@ -35,7 +35,7 @@
                 <v-icon v-text="item.icon"></v-icon>
               </v-list-item-icon>
             </v-list-item>
-            <router-link to="/mishongos" style="text-decoration: none; color: inherit;">
+            <router-link to="/mymushrooms" style="text-decoration: none; color: inherit;">
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-title>Mis Hongos</v-list-item-title>
